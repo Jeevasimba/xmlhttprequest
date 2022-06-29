@@ -2,6 +2,30 @@
 <html>
 
 <head>
+	<style>
+		.button {
+		  display: inline-block;
+		  padding: 15px 25px;
+		  font-size: 24px;
+		  cursor: pointer;
+		  text-align: center;
+		  text-decoration: none;
+		  outline: none;
+		  color: #fff;
+		  background-color: #4CAF50;
+		  border: none;
+		  border-radius: 15px;
+		  box-shadow: 0 9px #999;
+		}
+		
+		.button:hover {background-color: #3e8e41}
+		
+		.button:active {
+		  background-color: #3e8e41;
+		  box-shadow: 0 5px #666;
+		  transform: translateY(4px);
+		}
+		</style>
 	<title>
 		Display data in html table.
 	</title>
@@ -13,8 +37,10 @@
 
 <body style = "text-align:center;" id = "body">
 	
-	<button onclick = "constructTable('#table')">
-		Show table
+ 
+
+	<button class="button" onclick = "constructTable('#table'); loadDoc();">
+		click here to display html table
 	</button>
 	
 	<br><br>
@@ -26,7 +52,7 @@
 	<script>
 
               var xmlhttp = new XMLHttpRequest();
-              var url = "http://www.filltext.com/?rows=5&fname={firstName}&lname={lastName}&pretty=true";
+              var url = "http://www.filltext.com/?rows=10&fname={firstName}&lname={lastName}&pretty=true";
               var list;
 
               xmlhttp.onreadystatechange = function() {
@@ -37,6 +63,19 @@
                   };
              xmlhttp.open("GET", url, true);
              xmlhttp.send();
+
+			 function loadDoc() {
+                        const xhttp = new XMLHttpRequest();
+                        xhttp.onload = function() {
+							if (this.readyState == 4 && this.status == 200) {
+                            var myArr = JSON.parse(this.responseText);
+                            list = myArr;
+                     } 
+                        }
+                    xhttp.open("GET", url, true);
+                    xhttp.send();
+             }
+
 
 		function constructTable(selector) {
 					
