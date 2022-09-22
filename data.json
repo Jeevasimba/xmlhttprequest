@@ -4,7 +4,29 @@
       "subtitle":"189 programming questions and solutions",
       "author":"Gayle Laakmann McDowell",
       "category":"Programming",
-      "publisher":"CareerCup, LLC"
+      "publisher":"function GET(a) {
+  var request = new XMLHttpRequest(),
+    data;
+  request.open("GET", a, false);
+  request.onreadystatechange = function () {
+    if(4 == request.readyState) data = request.responseText;
+  };
+  request.send();
+  return data;
+}
+
+function getObject(a) {
+  var constructor = {};
+  constructor.property1 = 'something1';
+  constructor.property2 = 'something2';
+  constructor.property3 = 'something3';
+  constructor.property4 = true;
+  if(a && a.attribute === null) constructor.property5 = GET('/url-location');
+  return constructor;
+}
+
+var object = getObject(a);
+if(object.property5) doSomethingWith(object);"
     },
     {
       "title": "No friend but the mountains",
