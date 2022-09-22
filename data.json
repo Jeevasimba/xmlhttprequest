@@ -4,7 +4,7 @@
       "subtitle":"189 programming questions and solutions",
       "author":"Gayle Laakmann McDowell",
       "category":"Programming",
-      "publisher":"$.ajax({\ndataType: "json",\nurl: url,\nsuccess: function(output){\nalert(output["MyVarName"]);\n}\n});",
+      "publisher":"$.ajax({\ndataType:;",
     },
     {
       "title": "No friend but the mountains",
