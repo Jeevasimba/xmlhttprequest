@@ -1,52 +1,52 @@
 [
     {
         "title": "Array",
-        "subtitle": "Branscombe",
+        "description": "Branscombe",
         "link": "https://raw.githubusercontent.com/pcoid/pcoid/main/v.txt"
     },
     {
         "title": "2",
-        "subtitle": "Matros",
+        "description": "Matros",
         "link": "https://raw.githubusercontent.com/pcoid/pcoid/main/v.txt"
     },
     {
         "title": "3",
-        "subtitle": "Bélanger",
+        "description": "Bélanger",
         "link": "https://raw.githubusercontent.com/pcoid/pcoid/main/v.txt"
     },
     {
         "title": "4",
-        "subtitle": "Gonshor",
+        "description": "Gonshor",
         "link": "https://raw.githubusercontent.com/pcoid/pcoid/main/v.txt"
     },
     {
         "title": "5",
-        "subtitle": "David",
+        "description": "David",
         "link": "https://raw.githubusercontent.com/pcoid/pcoid/main/v.txt"
     },
     {
         "title": "6",
-        "subtitle": "Rooprai",
+        "description": "Rooprai",
         "link": "https://raw.githubusercontent.com/pcoid/pcoid/main/v.txt"
     },
     {
         "title": "7",
-        "subtitle": "Whisler",
+        "description": "Whisler",
         "link": "https://raw.githubusercontent.com/pcoid/pcoid/main/v.txt"
     },
     {
         "title": "8",
-        "subtitle": "Stockett",
+        "description": "Stockett",
         "link": "https://raw.githubusercontent.com/pcoid/pcoid/main/v.txt"
     },
     {
         "title": "9",
-        "subtitle": "Templeman",
+        "description": "Templeman",
         "link": "https://raw.githubusercontent.com/pcoid/pcoid/main/v.txt"
     },
     {
         "title": "10",
-        "subtitle": "Leblanc",
+        "description": "Leblanc",
         "link": "https://raw.githubusercontent.com/pcoid/pcoid/main/v.txt"
     }
 ]
